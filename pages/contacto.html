@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon-32x32.png">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Contacto - EmbeddedRES</title>
+</head>
+
+<body>
+    <div class="main">
+        <header class="header">
+
+            <div class="header-logo">
+                <!--Logo principal-->
+                <a href="../index.html"><img src="../assets/logo-principal.png" alt="Logo Embedded RES"></a>
+
+            </div>
+
+            <ul class="header-navBar">
+                <li class="navBtn"><a href="../index.html">Inicio</a></li>
+                <li class="navBtn"><a href="nosotros.html">Nosotros</a></li>
+                <li class="navBtn"><a href="trabajos.html">Trabajos</a></li>
+                <li class="navBtn"><a href="notas-aplicacion.html">Notas de Aplicación</a></li>
+                <li class="navBtn"><a href="contacto.html">Contacto</a></li>
+            </ul>
+
+
+        </header>
+
+        <section class="section">
+
+            <h1>CONTACTO</h1>       
+
+            <article>
+
+                <form class="contacto" action="" method="post">
+
+                    <div class="contacto-1">
+
+                        <div>
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" name="nombre">
+
+                        </div>
+
+                        <div>
+                            <label for="apellido">Apellido:</label>
+                            <input type="text" name="apellido">
+                        </div>
+
+                        <div>
+                            <label for="correo-electronico">E-mail:</label>
+                            <input type="email" mame="correo-electronico">
+                        </div>
+
+                        <div>
+                            <label for="ocupacion">Seleccione Ocupación: </label>
+                            <select name="ocupacion" id="">
+                                <option value="Estudiante">Estudiante</option>
+                                <option value="Profesional">Profesional</option>
+                                <option value="Entusiasta">Entusiasta</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="experiencia">¿Tiene experiendia en sistemas embebido?</label>
+                            <label for="experiencia-si">Si</label>
+                            <input type="radio" id="experiencia-si" name="experiencia" value="Si">
+                            <label for="experiencia-no">No</label>
+                            <input type="radio" id="experiencia-no" name="experiencia" value="No">
+                        </div>
+
+                        <div>
+                            <label for="checkNewsletters">Acepto recibr News Letters</label>
+                            <input type="checkbox" name="checkNewsletters" id="">
+                        </div>
+
+                    </div>
+
+                    <div class="contacto-2">
+                        <label for="mensaje">Deje su mensaje</label>
+                        <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <div class="contacto-3">
+                        <input type="submit" value="Enviar formulario">
+                        <input type="reset" value="Limpiar formulario">
+                    </div>
+
+                </form>
+
+            </article>
+
+        </section>
+
+        <footer class="footer">
+
+            <!-- TODO: Agregar logo pequeño -->
+            <div>
+                <img src="../assets/logo-footer.png" alt="Logo Embedded RES footer">
+                <h8> <b>Desarrollado por:</b> <i>Carlos Dell'Aquila</i></h3>
+            </div>
+
+
+            <div class="socialMenu">
+                <ul class="socialMenuLink">
+                    <li><a href="https://www.facebook.com">FACEBOOK</a></li>
+                    <li><a href="https://www.instagram.com">INSTAGRAM</a></li>
+                    <li><a href="https://www.twitter.com">TWITTER</a></li>
+                    <li><a href="https://www.linkid.com">LinkID</a></li>
+                </ul>
+            </div>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
