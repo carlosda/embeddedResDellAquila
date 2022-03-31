@@ -29,6 +29,34 @@
     background-repeat: repeat;
 }
 
+.inicio-logo {
+    animation-duration: 1s;
+    animation-name: mueve-logo;
+    animation-iteration-count: initial;
+}
+
+@keyframes mueve-logo {
+    0% {
+        transform: skewY(20deg);
+    }
+
+    25% {
+        transform: skewY(15deg);
+    }
+  
+    50% {
+        transform: skewY(10deg);
+    }
+
+    75% {
+        transform: skewY(5deg);
+    }
+
+    100% {
+        transform: skewY(0deg);
+    }
+}
+
 .header-navBar {  
     display: flex;
     flex-direction: row;
@@ -90,7 +118,14 @@
 .contenido-foto {
     width: 250px;
     height: auto;
-    margin: 5px 5px 5px 5px
+    margin: 5px 5px 5px 5px;
+    transition: all 2s
+}
+
+
+.contenido-foto:hover {
+    width:  400px;
+    height: auto;
 }
 
 .contacto-1 {
