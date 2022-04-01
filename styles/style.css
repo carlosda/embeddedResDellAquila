@@ -40,18 +40,6 @@
         transform: skewY(20deg);
     }
 
-    25% {
-        transform: skewY(15deg);
-    }
-  
-    50% {
-        transform: skewY(10deg);
-    }
-
-    75% {
-        transform: skewY(5deg);
-    }
-
     100% {
         transform: skewY(0deg);
     }
