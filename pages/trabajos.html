@@ -32,8 +32,8 @@
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
                             <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-                            <a class="nav-link active" href="../pages/nosotros.html">Nosotros</a>
-                            <a class="nav-link" href="../pages/trabajos.html">Trabajos</a>
+                            <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                            <a class="nav-link active" href="../pages/trabajos.html">Trabajos</a>
                             <a class="nav-link" href="../pages/notas-aplicacion.html">Notas de Aplicación</a>
                             <a class="nav-link" href="../pages/contacto.html">Contacto</a>
                         </div>
@@ -42,24 +42,63 @@
             </nav>
         </header>
 
-        <section class="section">
+        <section class="row">
 
-            <article>
+            <article class="col-12 intro-section">
                 <h1>Trabajo realizados</h1>
                 <p>Todos nuestros trabajos han sido desarrollando con buenas prácticas, no obstante siempre estamos
                     abiertos a nuevas sugerencias para mejorar.</p>
             </article>
 
-            <article class="contenido">
-                <img class="contenido-foto" src="../assets/trabajo-01.jpg" alt="sistema-telemetria">
-                <div class="contenido-data">
-                    <h1>Sistema Telemetría signos vitales</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quas quibusdam quae nisi consectetur
-                        nostrum ipsam, ut facere corrupti fugit dignissimos necessitatibus impedit a amet adipisci
-                        officia error voluptatibus enim!</p>
+
+            <article class="col-12">
+
+                <div class="cardBlog">
+
+                    <div class="cardBlog-titulo">
+                        <h2>Sistema Telemetría para salud</h2>
+
+                    </div>
+
+                    <div class="cardBlog-datos">
+
+                        <div class="cardBlog-datos-foto">
+                            <img class="contenido-foto" src="../assets/trabajo-01.jpg" alt="sistema-telemetria">
+                        </div>
+
+                        <div class="cardBlog-datos-texto">
+                            <p>Sistema embebido que permite el registro de señales y parámetros vitales de parsonas. El sistema cuenta con comunicación Bluetooth para transmitir toda la información hacia un teléfono celular.</p>
+                        </div>
+                        
+
+                    </div>
+
+                    <div class="cardBlog-detalles">
+
+                        <div class="cardBlog-detalle-tags">
+                            
+                            <ul>
+                                <li>C/C++</li>
+                                <li>PCB</li>
+                                <li>BLE</li>                                
+                            </ul>
+
+                        </div>
+                        
+                        <div class="cardBlog-detalle-mas">
+
+                            <a href="#">MÁS</a>
+
+                        </div>
+
+                    </div>
+
+
                 </div>
+
             </article>
 
+   
         </section>
 
         <footer class="row">
