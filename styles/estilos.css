@@ -1,0 +1,277 @@
+@charset "UTF-8";
+/* Imagen de fondo del footer */
+.intro-section {
+  background-color: rgba(247, 242, 242, 0.774); }
+
+.footer {
+  padding: 10px;
+  background-image: url("../assets/background.png");
+  background-repeat: repeat; }
+
+.inicio-logo {
+  animation-duration: 1s;
+  animation-name: mueve-logo;
+  animation-iteration-count: initial; }
+
+@keyframes mueve-logo {
+  0% {
+    transform: skewY(20deg); }
+  100% {
+    transform: skewY(0deg); } }
+
+.section-carrusel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.section-inst {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+  .section-inst .card {
+    width: 300px;
+    height: auto;
+    margin: 5px 5px 5px 5px; }
+    .section-inst .card .title {
+      width: auto;
+      text-align: center;
+      color: aliceblue;
+      background-color: black; }
+
+.cardMiembro {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 3fr 1fr 0.5fr;
+  grid-template-areas: "nombre" "foto" "descripcion" "mas";
+  border: 1px solid lightgray;
+  box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+  border-radius: 15px;
+  margin: 5%;
+  font-family: sans-serif; }
+  .cardMiembro .nombre {
+    grid-area: nombre;
+    display: block;
+    margin: auto;
+    background-color: rgba(247, 242, 242, 0.774);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    text-align: center;
+    margin: 5px; }
+  .cardMiembro .foto {
+    grid-area: foto;
+    display: block;
+    margin: auto; }
+    .cardMiembro .foto img {
+      grid-area: contenidoFoto;
+      width: 250px;
+      height: auto;
+      margin: 5px 5px 5px 5px;
+      transition: all 2s; }
+  .cardMiembro .descripcion {
+    grid-area: descripción;
+    padding: 20%; }
+  .cardMiembro .mas {
+    grid-area: mas;
+    background-color: black;
+    color: whitesmoke;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-align: center; }
+
+.trabajoBlog {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 0.5fr;
+  grid-template-areas: "titulo" "datos" "detalles";
+  border: 1px solid lightgray;
+  box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+  border-radius: 15px;
+  margin: 5%;
+  font-family: sans-serif; }
+  .trabajoBlog .titulo {
+    grid-area: titulo;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(247, 242, 242, 0.774);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 1%; }
+    .trabajoBlog .titulo img {
+      width: 50px;
+      height: auto; }
+  .trabajoBlog .datos {
+    grid-area: datos;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+    .trabajoBlog .datos .foto img {
+      grid-area: contenidoFoto;
+      width: 250px;
+      height: auto;
+      margin: 5px 5px 5px 5px;
+      transition: all 2s; }
+    .trabajoBlog .datos .texto p {
+      color: black; }
+  .trabajoBlog .detalles {
+    grid-area: detalles;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 10px;
+    background-color: #cac5c5;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px; }
+    .trabajoBlog .detalles .tags ul {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      list-style-type: none; }
+    .trabajoBlog .detalles .tags li {
+      background-color: whitesmoke;
+      text-align: center;
+      border-radius: 2px;
+      margin: 3px;
+      padding: 4px; }
+    .trabajoBlog .detalles .mas a {
+      text-align: center;
+      color: black;
+      font-style: italic;
+      text-decoration: none;
+      background-color: whitesmoke;
+      border-radius: 2px;
+      margin: 3px;
+      margin-right: 50px;
+      padding: 4px;
+      box-shadow: 1px 1px 4px 2px #d3d3d3d1; }
+      .trabajoBlog .detalles .mas a:hover {
+        color: whitesmoke;
+        background-color: black; }
+
+.notasBlog {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 0.5fr;
+  grid-template-areas: "titulo" "datos" "detalles";
+  border: 1px solid lightgray;
+  box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+  border-radius: 15px;
+  margin: 5%;
+  font-family: sans-serif; }
+  .notasBlog .titulo {
+    grid-area: titulo;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(247, 242, 242, 0.774);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 1%; }
+    .notasBlog .titulo img {
+      width: 50px;
+      height: auto; }
+  .notasBlog .datos {
+    grid-area: datos;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+    .notasBlog .datos .foto img {
+      grid-area: contenidoFoto;
+      width: 250px;
+      height: auto;
+      margin: 5px 5px 5px 5px;
+      transition: all 2s; }
+    .notasBlog .datos .texto p {
+      color: black; }
+  .notasBlog .detalles {
+    grid-area: detalles;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 10px;
+    background-color: #cac5c5;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px; }
+    .notasBlog .detalles ul {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      list-style-type: none; }
+    .notasBlog .detalles li {
+      background-color: whitesmoke;
+      text-align: center;
+      border-radius: 2px;
+      margin: 3px;
+      padding: 4px; }
+    .notasBlog .detalles a {
+      text-align: center;
+      color: black;
+      font-style: italic;
+      text-decoration: none;
+      background-color: whitesmoke;
+      border-radius: 2px;
+      margin: 3px;
+      margin-right: 50px;
+      padding: 4px;
+      box-shadow: 1px 1px 4px 2px #d3d3d3d1; }
+      .notasBlog .detalles a:hover {
+        color: whitesmoke;
+        background-color: black; }
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end; }
+  .form-buttons button {
+    margin: 5px;
+    background-color: black;
+    border-color: black; }
+
+/* Mobile layout */
+@media screen and (min-width: 400px) {
+  .section-carrusel .carrusel {
+    width: 400px;
+    height: auto; }
+  .trabajoBlog .datos {
+    flex-direction: column; }
+  .footer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center; }
+  .socialMenuLink li {
+    display: block;
+    list-style: none;
+    margin: 2px 2px 2px 2px; } }
+
+/* Tablet layout */
+@media screen and (min-width: 756px) {
+  .section-carrusel .carrusel {
+    width: 756px;
+    height: auto; }
+  .trabajoBlog .datos {
+    flex-direction: column; }
+  .footer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center; }
+  .socialMenuLink li {
+    display: inline-block;
+    list-style: none;
+    margin: 2px 2px 2px 2px; } }
+
+/* Desktop layout */
+@media screen and (min-width: 1200px) {
+  .section-carrusel .carrusel {
+    width: auto;
+    height: auto; }
+  .trabajoBlog .datos {
+    flex-direction: row; }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-end; }
+  .socialMenuLink li {
+    display: inline-block;
+    list-style: none;
+    margin: 2px 2px 2px 2px; } }

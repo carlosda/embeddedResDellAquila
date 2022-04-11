@@ -1,0 +1,60 @@
+.cardMiembro {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 1fr 0.5fr;
+    grid-template-areas:
+        "nombre"
+        "foto"
+        "descripcion"
+        "mas";
+
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+    border-radius: 15px;
+    margin: 5%;
+    font-family: sans-serif;
+
+    .nombre {
+
+        grid-area: nombre;
+        display: block;
+        margin: auto;
+        background-color: rgba(247, 242, 242, 0.774);
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        text-align: center;
+        margin: 5px;
+
+    }
+
+    .foto {
+        grid-area: foto;
+        display: block;
+        margin: auto;
+
+        img {
+            grid-area: contenidoFoto;
+            width: 250px;
+            height: auto;
+            margin: 5px 5px 5px 5px;
+            transition: all 2s
+        }
+
+    }
+
+    .descripcion {
+        grid-area: descripción;
+        padding: 20%;
+
+    }
+
+    .mas {
+        grid-area: mas;
+        background-color: black;
+        color: whitesmoke;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        text-align: center;
+
+    }
+}

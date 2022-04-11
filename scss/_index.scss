@@ -1,0 +1,43 @@
+.inicio-logo {
+    animation-duration: 1s;
+    animation-name: mueve-logo;
+    animation-iteration-count: initial;
+
+    @keyframes mueve-logo {
+        0% {
+            transform: skewY(20deg);
+        }
+    
+        100% {
+            transform: skewY(0deg);
+        }        
+    }
+}
+
+.section-carrusel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.section-inst {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    .card {
+        width: 300px;
+        height: auto;
+        margin: 5px 5px 5px 5px;
+
+        .title {
+            width: auto;
+            text-align: center;
+            color: aliceblue;
+            background-color: black;
+        }
+    }
+}
+
+

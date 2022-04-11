@@ -1,0 +1,105 @@
+.trabajoBlog {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 0.5fr;
+    grid-template-areas:
+        "titulo"
+        "datos"
+        "detalles";
+
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+    border-radius: 15px;
+    margin: 5%;
+    font-family: sans-serif;
+
+    .titulo {
+        grid-area: titulo;
+        display: flex;
+        flex-direction: row;
+        background-color: rgba(247, 242, 242, 0.774);
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        padding: 1%;
+
+        img {
+            width: 50px;
+            height: auto;
+        }
+
+    }
+
+    .datos {
+        grid-area: datos;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        .foto {
+            img {
+                grid-area: contenidoFoto;
+                width: 250px;
+                height: auto;
+                margin: 5px 5px 5px 5px;
+                transition: all 2s
+            }
+        }
+
+        .texto {
+            p {
+                color: black;
+            }
+        }
+    }
+
+    .detalles {
+        grid-area: detalles;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 10px;
+        background-color: rgb(202, 197, 197);
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+
+        .tags {
+
+            ul {
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                list-style-type: none;
+            }
+
+            li {
+                background-color: whitesmoke;
+                text-align: center;
+                border-radius: 2px;
+                margin: 3px;
+                padding: 4px;
+            }
+        }
+
+        .mas {
+
+            a {
+                text-align: center;
+                color: black;
+                font-style: italic;
+                text-decoration: none;
+                background-color: whitesmoke;
+                border-radius: 2px;
+                margin: 3px;
+                margin-right: 50px;
+                padding: 4px;
+                box-shadow: 1px 1px 4px 2px #d3d3d3d1;
+
+                &:hover {
+                    color: whitesmoke;
+                    background-color: black;
+                }
+            }
+        }
+    }
+}
