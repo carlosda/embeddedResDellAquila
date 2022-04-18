@@ -7,4 +7,34 @@
     padding: 10px;
     background-image: url($footer-background-img);
     background-repeat: repeat;
+
+    .socialMediaBase{
+        width: 35px;
+        height: "auto";
+        border-radius: 5px;
+        background-color: black;    
+    } 
+    
+    @if $social-theme=="color"{
+        /* Color theme */
+        @each $red, $color in $redes{
+
+            .social-#{$red} {
+                @extend .socialMediaBase;
+                background-color: $color;
+                }
+            }
+
+    } @else { 
+        /* Dark theme */
+
+        @each $red, $color in $redes{
+
+            .social-#{$red} {
+                @extend .socialMediaBase;                
+                }
+            }
+        
+  
+    }
 }

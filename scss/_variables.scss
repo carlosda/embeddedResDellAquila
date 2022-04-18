@@ -2,4 +2,12 @@ $mobile-breackpoint: 400px;
 $table-breackpoint: 756px;
 $desktop-breackpoint: 1200px;
 
+$social-theme: "color"; /* options: - color: socil media original color, - anything for black color. */
+$redes:(
+    facebook: #1877F2,
+    instagram: #E4405F,
+    twitter: #1DA1F2,
+    linkedin : #0A66C2,
+);
+
 $footer-background-img:"../assets/background.png"; /* Imagen de fondo del footer */

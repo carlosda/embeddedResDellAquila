@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* options: - color: socil media original color, - anything for black color. */
 /* Imagen de fondo del footer */
 .intro-section {
   background-color: rgba(247, 242, 242, 0.774); }
@@ -6,7 +7,21 @@
 .footer {
   padding: 10px;
   background-image: url("../assets/background.png");
-  background-repeat: repeat; }
+  background-repeat: repeat;
+  /* Color theme */ }
+  .footer .socialMediaBase, .footer .social-facebook, .footer .social-instagram, .footer .social-twitter, .footer .social-linkedin {
+    width: 35px;
+    height: "auto";
+    border-radius: 5px;
+    background-color: black; }
+  .footer .social-facebook {
+    background-color: #1877F2; }
+  .footer .social-instagram {
+    background-color: #E4405F; }
+  .footer .social-twitter {
+    background-color: #1DA1F2; }
+  .footer .social-linkedin {
+    background-color: #0A66C2; }
 
 .inicio-logo {
   animation-duration: 1s;
