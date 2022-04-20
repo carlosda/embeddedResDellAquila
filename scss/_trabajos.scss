@@ -1,23 +1,17 @@
 .trabajoBlog {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 0.5fr;
-    grid-template-areas:
-        "titulo"
-        "datos"
-        "detalles";
-
-    border: 1px solid lightgray;
-    box-shadow: 2px 2px 8px 4px #d3d3d3d1;
-    border-radius: 15px;
-    margin: 5%;
-    font-family: sans-serif;
+    
+    $rows: 1fr 2fr 0.5fr;
+    $areas: "titulo"
+            "datos"
+            "detalles";            
+    @include cardBase($rows,$areas);
 
     .titulo {
         grid-area: titulo;
         display: flex;
         flex-direction: row;
-        background-color: rgba(247, 242, 242, 0.774);
+        background-color: map-get($cardBaseStyle,headerBackground);
+       /* background-color: rgba(247, 242, 242, 0.774); */
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
         padding: 1%;
@@ -26,7 +20,6 @@
             width: 50px;
             height: auto;
         }
-
     }
 
     .datos {
@@ -47,7 +40,8 @@
 
         .texto {
             p {
-                color: black;
+                color: map-get($cardBaseStyle,textColor);
+                /* color: black; */
             }
         }
     }
@@ -59,7 +53,8 @@
         justify-content: space-between;
         align-items: baseline;
         padding: 10px;
-        background-color: rgb(202, 197, 197);
+        background-color: map-get($cardBaseStyle,footBackground);
+         /* background-color: rgb(202, 197, 197); */
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
 

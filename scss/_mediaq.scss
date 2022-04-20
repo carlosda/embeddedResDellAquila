@@ -1,13 +1,26 @@
 /* Mobile layout */
 @media screen and (min-width: $mobile-breackpoint) {
 
-    .section-carrusel {
 
-        .carrusel {
-            width: 400px;
+
+    .carrusel {
+        display: flex;
+        flex-direction: row;
+        background-color:  rgba(247, 242, 242, 0.774);
+
+        .carrusel-texto {
+            width: auto;
+            text-align: center;
+            font-size: large;
+            padding: 10%;
+        }
+
+        img {
+            width: 300px;
             height: auto;
         }
     }
+
 
     .trabajoBlog {
         .datos {
@@ -33,13 +46,26 @@
 /* Tablet layout */
 @media screen and (min-width: $table-breackpoint) {
 
-    .section-carrusel {
 
-        .carrusel {
-            width: 756px;
+
+    .carrusel {
+        display: flex;
+        flex-direction: row;
+        background-color:  rgba(247, 242, 242, 0.774);
+
+        .carrusel-texto {
+            width: auto;
+            text-align: center;
+            font-size: large;
+            padding: 10%;
+        }
+
+        img {
+            width: 600px;
             height: auto;
         }
     }
+
 
     .trabajoBlog {
         .datos {
@@ -66,10 +92,22 @@
 /* Desktop layout */
 @media screen and (min-width: $desktop-breackpoint) {
 
-    .section-carrusel {
+    .carrusel {
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        align-items: center;
+        background-color:  rgba(247, 242, 242, 0.774);
 
-        .carrusel {
+        .carrusel-texto {
             width: auto;
+            text-align: center;
+            font-size: large;
+            padding: 10%;
+        }
+
+        img {
+            width: 600px;
             height: auto;
         }
     }

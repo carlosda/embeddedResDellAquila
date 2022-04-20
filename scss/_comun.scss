@@ -2,6 +2,29 @@
     background-color: rgba(247, 242, 242, 0.774);
 }
 
+$cardBaseStyle: (
+    borderColor: lightgray,
+    shadowColor: #d3d3d3d1,
+    headerBackground: rgba(247, 242, 242, 0.774),
+    textColor: black,
+    footBackground: rgb(202, 197, 197)
+);
+
+@mixin cardBase($rows, $areas) {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: $rows;
+    grid-template-areas: $areas;       
+
+    border: 1px solid map-get($cardBaseStyle,borderColor); /*lightgray;*/
+    box-shadow: 2px 2px 8px 4px map-get($cardBaseStyle,shadowColor);  /*#d3d3d3d1;*/
+    border-radius: 15px;
+    margin: 5%;
+    font-family: sans-serif;	
+}
+
+
 .footer {
    
     padding: 10px;
@@ -34,7 +57,5 @@
                 @extend .socialMediaBase;                
                 }
             }
-        
-  
     }
 }

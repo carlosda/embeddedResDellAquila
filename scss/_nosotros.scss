@@ -1,18 +1,11 @@
 .cardMiembro {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 3fr 1fr 0.5fr;
-    grid-template-areas:
-        "nombre"
-        "foto"
-        "descripcion"
-        "mas";
-
-    border: 1px solid lightgray;
-    box-shadow: 2px 2px 8px 4px #d3d3d3d1;
-    border-radius: 15px;
-    margin: 5%;
-    font-family: sans-serif;
+    
+    $rows: 1fr 3fr 1fr 0.5fr;
+    $areas: "nombre"
+            "foto"
+            "descripcion"
+            "mas";
+    @include cardBase($rows,$areas);
 
     .nombre {
 
