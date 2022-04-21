@@ -313,8 +313,12 @@
       font-size: large;
       padding: 10%; }
     .carrusel img {
-      width: 600px;
-      height: auto; }
+      width: 400px;
+      height: auto;
+      margin: 50px;
+      border-top-left-radius: 100px;
+      border-bottom-right-radius: 100px;
+      box-shadow: 4px 4px 16px 8px #d3d3d3af; }
   .trabajoBlog .datos {
     flex-direction: row; }
   .footer {
