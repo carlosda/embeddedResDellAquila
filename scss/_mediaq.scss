@@ -1,11 +1,11 @@
 /* Mobile layout */
 @media screen and (min-width: $mobile-breackpoint) {
 
-
-
     .carrusel {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
         background-color:  rgba(247, 242, 242, 0.774);
 
         .carrusel-texto {
@@ -18,9 +18,12 @@
         img {
             width: 300px;
             height: auto;
+            margin: 20px;
+            border-top-left-radius: 100px;
+            border-bottom-right-radius: 100px;
+            box-shadow: 4px 4px 16px 8px #d3d3d3af;
         }
     }
-
 
     .trabajoBlog {
         .datos {
@@ -46,11 +49,11 @@
 /* Tablet layout */
 @media screen and (min-width: $table-breackpoint) {
 
-
-
     .carrusel {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
         background-color:  rgba(247, 242, 242, 0.774);
 
         .carrusel-texto {
@@ -61,8 +64,12 @@
         }
 
         img {
-            width: 600px;
+            width: 400px;
             height: auto;
+            margin: 25px;
+            border-top-left-radius: 100px;
+            border-bottom-right-radius: 100px;
+            box-shadow: 4px 4px 16px 8px #d3d3d3af;
         }
     }
 

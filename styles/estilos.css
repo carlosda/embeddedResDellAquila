@@ -253,7 +253,9 @@
 @media screen and (min-width: 400px) {
   .carrusel {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
     background-color: rgba(247, 242, 242, 0.774); }
     .carrusel .carrusel-texto {
       width: auto;
@@ -262,7 +264,11 @@
       padding: 10%; }
     .carrusel img {
       width: 300px;
-      height: auto; }
+      height: auto;
+      margin: 20px;
+      border-top-left-radius: 100px;
+      border-bottom-right-radius: 100px;
+      box-shadow: 4px 4px 16px 8px #d3d3d3af; }
   .trabajoBlog .datos {
     flex-direction: column; }
   .footer {
@@ -278,7 +284,9 @@
 @media screen and (min-width: 756px) {
   .carrusel {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
     background-color: rgba(247, 242, 242, 0.774); }
     .carrusel .carrusel-texto {
       width: auto;
@@ -286,8 +294,12 @@
       font-size: large;
       padding: 10%; }
     .carrusel img {
-      width: 600px;
-      height: auto; }
+      width: 400px;
+      height: auto;
+      margin: 25px;
+      border-top-left-radius: 100px;
+      border-bottom-right-radius: 100px;
+      box-shadow: 4px 4px 16px 8px #d3d3d3af; }
   .trabajoBlog .datos {
     flex-direction: column; }
   .footer {
