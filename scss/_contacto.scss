@@ -1,11 +1,15 @@
-.form-buttons {
-    display: flex;
-    justify-content: flex-end; 
+.form {
+    padding: 5%;
 
-    button {
-        margin: 5px;
-        background-color: black;
-        border-color: black;
+    .form-buttons {
+        display: flex;
+        justify-content: flex-end;
+
+        button {
+            margin: 5px;
+            background-color: black;
+            border-color: black;
+        }
     }
-}
 
+}

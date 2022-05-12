@@ -45,82 +45,85 @@
             </nav>
         </header>
 
-        <section class="row">
+        <main>
 
-            <article class="col-12 intro-section">
-                <h1>CONTACTO</h1>
-                <p>Contactanos para conocer más acerca nosotros y nuestros trabajos.</p>
-            </article>
+            <section class="row">
 
+                <article class="col-12 intro-section">
+                    <h1>CONTACTO</h1>
+                    <p>Contactanos para conocer más acerca nosotros y nuestros trabajos.</p>
+                </article>
 
-            <article>
-                <form class="row g-3">
+                <article>
+                    <form class=" form row g-3">                        
 
-                    <div class="col-xl-6 col-md-12 col-sm-12">
+                        <div class="col-xl-6 col-md-12 col-sm-12">
 
-                        <div>
-                            <label for="inputNombre" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="inputNombre">
+                            <div>
+                                <label for="inputNombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="inputNombre">
+                            </div>
+
+                            <div>
+                                <label for="inputApellido" class="form-label">Apellido</label>
+                                <input type="text" class="form-control" id="inputPassword4">
+                            </div>
+
+                            <div>
+                                <label for="inputEmail4" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4">
+                            </div>
+
+                            <div>
+                                <label for="ocupacion"></label>
+                                <select class="form-select" aria-label="Default select example" id="ocupacion">
+                                    <option selected>Seleccione Ocupación</option>
+                                    <option value="1">Profesional</option>
+                                    <option value="2">Estudiante</option>
+                                    <option value="3">Hobbista</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="flexRadioDefault">¿Tiene experiendia en sistemas embebido?</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">Si</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">No</label>
+                                </div>
+                            </div>
+
                         </div>
 
-                        <div>
-                            <label for="inputApellido" class="form-label">Apellido</label>
-                            <input type="text" class="form-control" id="inputPassword4">
-                        </div>
-
-                        <div>
-                            <label for="inputEmail4" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="inputEmail4">
-                        </div>
-
-                        <div>
-                            <label for="ocupacion"></label>
-                            <select class="form-select" aria-label="Default select example" id="ocupacion">
-                                <option selected>Seleccione Ocupación</option>
-                                <option value="1">Profesional</option>
-                                <option value="2">Estudiante</option>
-                                <option value="3">Hobbista</option>
-                            </select>
-                        </div>
-
-                        <div>
-                            <label for="flexRadioDefault">¿Tiene experiendia en sistemas embebido?</label>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">Si</label>
+                        <div class="col-xl-6 col-md-12 col-sm-12">
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Deje sus comentarios</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault2" checked>
-                                <label class="form-check-label" for="flexRadioDefault2">No</label>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Acepto recibir Newsletters
+                                </label>
                             </div>
                         </div>
 
-                    </div>
-
-                    <div class="col-xl-6 col-md-12 col-sm-12">
-                        <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label">Deje sus comentarios</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+                        <div class="col-12 form-buttons">
+                            <button type="reset" class="btn btn-primary">Limpiar</button>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                Acepto recibit Newsletters
-                            </label>
-                        </div>
-                    </div>
+                    </form>
 
-                    <div class="col-12 form-buttons">
-                        <button type="reset" class="btn btn-primary">Limpiar</button>
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                    </div>
-                </form>
+                </article>
 
-            </article>
+            </section>
 
-        </section>
+        </main>
 
         <footer class="row">
 
@@ -128,15 +131,24 @@
                 <!-- TODO: Agregar logo pequeño -->
                 <div>
                     <img src="../assets/logo-footer.svg" alt="Logo Embedded RES footer">
-                    <h8> <b>Desarrollado por:</b> <i>Carlos Dell'Aquila</i></h3>
+                    <h8> <b>Desarrollado por: </b>
+                        <i>
+                            <a href="https://www.linkedin.com/in/carlos-dell-aquila-31910623a/" target="_b">Carlos
+                                Dell'Aquila</a>
+                        </i>
+                    </h8>
                 </div>
 
                 <div class="socialMenu">
                     <ul class="socialMenuLink">
-                        <li><a href="https://www.facebook.com"  target="_b"> <img class="social-facebook" src="../assets/facebook-white.svg"  alt="FACEBOOK"></img></a></li>
-                        <li><a href="https://www.instagram.com" target="_b" ><img class="social-instagram"  src="../assets/instagram-white.svg" alt="INSTAGRAM"></img></a></li>
-                        <li><a href="https://www.twitter.com"   target="_b"><img class="social-twitter"   src="../assets/twitter-white.svg"   alt="INSTAGRAM"></img></a></li>
-                        <li><a href="https://ar.linkedin.com"    target="_b"><img class="social-linkedin" src="../assets/linkedin-white.svg"  alt="LinkedIN"></img></a></li>
+                        <li><a href="https://www.facebook.com" target="_b"> <img class="social-facebook"
+                                    src="../assets/facebook-white.svg" alt="FACEBOOK"></img></a></li>
+                        <li><a href="https://www.instagram.com" target="_b"><img class="social-instagram"
+                                    src="../assets/instagram-white.svg" alt="INSTAGRAM"></img></a></li>
+                        <li><a href="https://www.twitter.com" target="_b"><img class="social-twitter"
+                                    src="../assets/twitter-white.svg" alt="INSTAGRAM"></img></a></li>
+                        <li><a href="https://ar.linkedin.com" target="_b"><img class="social-linkedin"
+                                    src="../assets/linkedin-white.svg" alt="LinkedIN"></img></a></li>
                     </ul>
                 </div>
             </div>

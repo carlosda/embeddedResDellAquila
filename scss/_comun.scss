@@ -1,4 +1,11 @@
+
+strong {
+    font-weight: bold;
+}
+
 .intro-section {
+    margin-top: 15px;
+    margin-bottom: 30px;
     background-color: rgba(247, 242, 242, 0.774);
 }
 
@@ -26,7 +33,8 @@ $cardBaseStyle: (
 
 
 .footer {
-   
+
+    margin-top: 50px;
     padding: 10px;
     background-image: url($footer-background-img);
     background-repeat: repeat;

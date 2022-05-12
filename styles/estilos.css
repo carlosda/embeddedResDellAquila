@@ -1,10 +1,15 @@
-@charset "UTF-8";
 /* options: - color: socil media original color, - anything for black color. */
 /* Imagen de fondo del footer */
+strong {
+  font-weight: bold; }
+
 .intro-section {
+  margin-top: 15px;
+  margin-bottom: 30px;
   background-color: rgba(247, 242, 242, 0.774); }
 
 .footer {
+  margin-top: 50px;
   padding: 10px;
   background-image: url("../assets/background.png");
   background-repeat: repeat;
@@ -37,64 +42,77 @@
 .section-carrusel {
   display: flex;
   flex-direction: row;
-  justify-content: space-around; }
+  justify-content: space-around;
+  padding-top: 2%;
+  padding-bottom: 2%; }
 
 .section-inst {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  padding: 2%; }
   .section-inst .card {
     width: 300px;
     height: auto;
-    margin: 5px 5px 5px 5px; }
+    margin: 5px 5px 5px 5px;
+    border: none; }
     .section-inst .card .title {
       width: auto;
       text-align: center;
       color: aliceblue;
       background-color: black; }
+    .section-inst .card p {
+      text-align: center; }
 
-.cardMiembro {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 3fr 1fr 0.5fr;
-  grid-template-areas: "nombre" "foto" "descripcion" "mas";
-  border: 1px solid lightgray;
-  /*lightgray;*/
-  box-shadow: 2px 2px 8px 4px #d3d3d3d1;
-  /*#d3d3d3d1;*/
-  border-radius: 15px;
-  margin: 5%;
-  font-family: sans-serif; }
-  .cardMiembro .nombre {
-    grid-area: nombre;
-    display: block;
-    margin: auto;
-    background-color: rgba(247, 242, 242, 0.774);
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    text-align: center;
-    margin: 5px; }
-  .cardMiembro .foto {
-    grid-area: foto;
-    display: block;
-    margin: auto; }
-    .cardMiembro .foto img {
-      grid-area: contenidoFoto;
-      width: 250px;
-      height: auto;
-      margin: 5px 5px 5px 5px;
-      transition: all 2s; }
-  .cardMiembro .descripcion {
-    grid-area: descripción;
-    padding: 20%; }
-  .cardMiembro .mas {
-    grid-area: mas;
-    background-color: black;
-    color: whitesmoke;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    text-align: center; }
+.miembros {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5%; }
+  .miembros .cardMiembro {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 1fr 0.5fr;
+    grid-template-areas: "nombre" "foto" "descripcion" "mas";
+    border: 1px solid lightgray;
+    /*lightgray;*/
+    box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+    /*#d3d3d3d1;*/
+    border-radius: 15px;
+    margin: 5%;
+    font-family: sans-serif; }
+    .miembros .cardMiembro .nombre {
+      grid-area: nombre;
+      display: block;
+      margin: auto;
+      background-color: rgba(247, 242, 242, 0.774);
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      text-align: center;
+      margin: 5px; }
+    .miembros .cardMiembro .foto {
+      grid-area: foto;
+      display: block;
+      margin: auto; }
+      .miembros .cardMiembro .foto img {
+        grid-area: contenidoFoto;
+        width: 250px;
+        height: auto;
+        margin: 5px 5px 5px 5px;
+        transition: all 2s; }
+    .miembros .cardMiembro .descripcion {
+      grid-area: descripcion; }
+      .miembros .cardMiembro .descripcion p {
+        text-align: center; }
+    .miembros .cardMiembro .mas {
+      grid-area: mas;
+      background-color: black;
+      color: whitesmoke;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      text-align: center; }
 
 .trabajoBlog {
   display: grid;
@@ -241,13 +259,15 @@
         color: whitesmoke;
         background-color: black; }
 
-.form-buttons {
-  display: flex;
-  justify-content: flex-end; }
-  .form-buttons button {
-    margin: 5px;
-    background-color: black;
-    border-color: black; }
+.form {
+  padding: 5%; }
+  .form .form-buttons {
+    display: flex;
+    justify-content: flex-end; }
+    .form .form-buttons button {
+      margin: 5px;
+      background-color: black;
+      border-color: black; }
 
 /* Mobile layout */
 @media screen and (min-width: 400px) {
